@@ -5,7 +5,7 @@ datasets='/Users/jayhesselberth/devel/MOLB7621/data-sets'
 
 states="$datasets/states.tab.gz"
 
-answer_1=$(gzcat $states \
+answer_0=$(gzcat $states \
     | grep -v '^#' \
     | cut -f1,2 \
     | sort -k2n \
@@ -15,3 +15,4 @@ answer_1=$(gzcat $states \
 
 echo "answer-1: $answer_1"
 
+answer_2=$
